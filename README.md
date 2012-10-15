@@ -5,15 +5,15 @@ and a double quotes as the enclosure; these can be specified other wise in the c
 
 ## Example
 
-$df = new DelimitedFile\src\DelimitedFile($file,',','"');
+        $df = new DelimitedFile\src\DelimitedFile($file,',','"');
 
-while($row = $df->next() && $df->valid()){
-    // do whatever you need to do to the data
-}
+        while($row = $df->next() && $df->valid()){
+            // do whatever you need to do to the data
+        }
 
-$df->key() - returns the line in the file
-$df->current() - sets the pointer to position of key and returns record
-$df->valid() - returns true if we're not at the end of the file
-$df->next() - returns the next row
-$df->rewind() - rewinds the pointer to the beginning
-$df->get($attr) - returns $attr - provided it exists
+        $df->key() - returns the line in the file
+        $df->current() - sets the pointer to position of key and returns record
+        $df->valid() - returns true if we're not at the end of the file
+        $df->next() - returns the next row
+        $df->rewind() - rewinds the pointer to the beginning
+        $df->get($attr) - returns $attr - provided it exists

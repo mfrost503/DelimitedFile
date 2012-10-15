@@ -75,6 +75,7 @@ class DelimitedFileTest extends PHPUnit_Framework_TestCase
         $this->assertTrue(!empty($row3));
         $noRow = $this->df->next();
         $this->assertTrue(empty($noRow));
+        $this->assertFalse($this->df->valid());
     }
 
 }
